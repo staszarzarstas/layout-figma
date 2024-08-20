@@ -1,0 +1,252 @@
+body {
+    position: relative;
+    font-family: 'Sen', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: auto;
+    background-color: #181823;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-menu li a:hover {
+    opacity: .7;
+    transform: scale(1.1);
+    border: 3px solid;
+    border-color: rgb(164, 89, 234);
+    transition: all .3s ease-in-out;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.contact {
+    align-self: center;
+    text-decoration: none;
+    margin-left: 30px;
+    border-radius: 100px;
+    padding: 10px 30px;
+    background-color: blueviolet;
+    margin-right: 10px;
+}
+
+.contact:hover {
+    opacity: .7;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.nav-wrap li {
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav-logo {
+    margin-left: 50px;
+}
+
+.top_title {
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin-left: 500px;
+    margin-top: 150px;
+    font-size: 64px;
+}
+
+.basedItaly {
+    color: blueviolet;
+}
+
+.top_description {
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin-left: 500px;
+}
+
+.top_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_text {
+    padding-bottom: 100px;
+}
+
+.top_img {
+    position: absolute;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.mini_section_two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_section {
+    position: relative;
+    margin-top: 10px;
+    background-color: #000000;
+}
+
+.work {
+    color: blueviolet;
+    font-size: 16px;
+    margin-left: 72px;
+}
+
+.content {
+    padding-top: 150px;
+}
+
+.two_section_text {
+    margin-left: 72px;
+    margin-top: 10px;
+    color: white;
+    font-size: 55px;
+}
+
+.text_section_two {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.numbers_section_two {
+    color: rgb(194, 149, 235);
+    font-weight: 400;
+    font-size: 117px;
+    height: 50px;
+}
+
+.text_two {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: grey;
+}
+
+.google,
+.facebook,
+.dribbble {
+    flex: 1;
+    max-width: 33%;
+    padding: 0 20px;
+    margin-bottom: 150px;
+}
+
+.section_three {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #FFF3E4;
+}
+
+.content_three {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+}
+
+.first_block_three {
+    max-width: 50%;
+    padding: 0px;
+}
+
+.first_block_three p {
+    color: grey;
+    margin-left: 72px;
+    font-size: 18px;
+    padding: 0;
+    padding-right: 15px;
+    line-height: 27px;
+}
+
+.first_block_three h1 {
+    font-size: 55px;
+    margin-left: 72px;
+    margin-top: 120px;
+    margin-bottom: 0;
+}
+
+.h1_three {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.img_three {
+    position: relative;
+    width: 750;
+    height: 600px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.two_block_three {
+    width: 50%;
+    height: auto;
+}
+
+.link_about_me {
+    display: inline-block;
+    padding-top: 150px;
+    margin-left: 72px;
+}
+
+.link_about_me a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: solid black;
+}
+
+.link_about_me a:hover {
+    font-size: 18px;
+    transition: all .7s ease;
+}
+
+.link_about_me a:not(:hover) {
+    transition-delay: 0.5s;
+    /* Задержка перед возвращением к дефолтному состоянию */
+}
