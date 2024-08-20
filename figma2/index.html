@@ -1,0 +1,149 @@
+<body>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<!-- Делаем базовые настройки body для того чтобы остальные элементы унаследовали от него
+шрифт и другие свойства, настройка стилей в файле style.css -->
+
+<body>
+	<!-- Лучше всего начинать сверху вниз создаем тег header и присваиваем класс header
+Создаём класс обертку и присваиваем ему свойства. CSS .wrapper {
+	    max-width: 1200px;
+    margin: 0 auto;
+}
+Эти свойства создают ширину заданную макетом, для объектов.
+Вкладываем отдельный div с лого этому div свой класс присваиваем. Затем туда тег а с вложенным img логотипа.
+ -->
+	<header class="header">
+		<div class="wrapper">
+			<!-- делам отдельную оболочку для хэдера т.к. по макету выравнивание левое и правое
+			требуется только для панельки навигации и логотипа -->
+			<div class="header_wrapper">
+				<div class="header_logo">
+					<ul class="header_logo_left">
+						<li class="header_item_left">
+							<a href="index.html" class="header_logo-link">
+								<img src="img/svg/svgg-logo.svg" alt="Wildlife-logo">
+							</a>
+						</li>
+						<li class="header_item_left">
+							<a href=" index.html" class="header_logo_text">WILDLIFE</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Сделан контейнер и лого далее делаем навигацию. Хорошая праткика создание навигации через тег ul и в каждом li идёт ссылка.
+		Хорошая практика всему присваивать классы. Это видимо БЭМ.
+	 -->
+				<nav class="header_nav">
+					<ul class="header_list">
+						<li class="header_item">
+							<a href="#!" class="header_link">Blog</a>
+						</li>
+						<li class="header_item">
+							<a href="#!" class="header_link">Contacts</a>
+						</li>
+						<li class="header_item">
+							<a href="#!" class="header_link"><img class="search_img" src="img/svg/Vector.svg"
+									alt=" "></a>
+						</li>
+						<li class="header_item">
+							<a class="header_link_register" href="#!">
+								<p class="header_link_signin">Sign in</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="survival">
+			<!-- используем ранее созданный блок/селектор wrapper  -->
+			<div class="wrapper">
+				<!-- создали блок он прилим к самому верху т.к. header fixed поэтому
+				он не в потоке файла -->
+				<h1 class="survival-title">Survival</h1>
+				<p class="survival-subtitle">
+					What this means is that we exist to help protect our environment and do in numbers of ways. You can
+					save the planet by donation.
+				</p>
+				<button class="survival-button">
+					Donate
+				</button>
+			</div>
+		</section>
+		<section class="main-section">
+			<div class="wrapper">
+				<h2 class="main-title">Latest articles</h2>
+				<h2 class="main-subtitle">Breaking news from the wild</h2>
+
+				<div class="slider">
+					<ul class="slider-items">
+						<li class="temp"><img class="slider-img" src="img/left.png" alt=""></li>
+						<li class="temp"><img class="slider-img" src="img/deer.jpg" alt=""></li>
+						<li class="temp"><img class="slider-img" src="img/sqir.jpg" alt=""></li>
+						<li class="temp"><img class="slider-img" src="img/bird.jpg" alt=""></li>
+						<li class="temp"><img class="slider-img" src="img/right.png" alt=""></li>
+					</ul>
+				</div>
+
+				<h3 class="h3-main-subtitle">Get notified about new amazing articles</h3>
+				<form class="email-input" action="">
+					<input class="email-text" type="email" placeholder="Email">
+					<input type="submit" class="main-button" value="Send">
+				</form>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-wrapper">
+					<div class="footer_logo">
+						<ul class="header_logo_left">
+							<li class="header_item_left">
+								<a href="index.html" class="header_logo-link">
+									<img src="img/svg/svgg-logo.svg" alt="Wildlife-logo">
+								</a>
+							</li>
+							<li class="header_item_left">
+								<a href=" index.html" class="header_logo_text">WILDLIFE</a>
+							</li>
+						</ul>
+					</div>
+					<div class="middle-links">
+						<ul class="footer-link-middle">
+							<li class="fitem"><a href="#" class="footer-link">Articles</a></li>
+							<li class="fitem"><a href="#" class="footer-link">About us</a></li>
+							<li class="fitem"><a href="#" class="footer-link">Learn more</a></li>
+						</ul>
+					</div>
+					<div class="right-links">
+						<ul class="footer-link-svg">
+							<li class="sd"><a href="" class="footer-link-vsg-a">a</a></li>
+							<li class="sd"><a href="" class="footer-link-vsg-b"></a>b</li>
+							<li class="sd"><a href="" class="footer-link-vsg-c"></a>c</li>
+							<li class="sd"><a href="" class="footer-link-vsg-d"></a>d</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</footer>
+	</main>
+</body>
+
+</html>
